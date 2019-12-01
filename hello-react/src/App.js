@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import MyComponent from './MyComponent';
 
 function App() {
-  const text = '리액트안녕~';
-
   return (
     <>
-      <h1 className="react">{text}</h1>
+      <MyComponent name="이일훈" number={1}>
+        리액트
+      </MyComponent>
     </>
   );
 }
