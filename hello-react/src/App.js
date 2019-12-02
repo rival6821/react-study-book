@@ -1,12 +1,10 @@
 import React from 'react';
-import MyComponent from './MyComponent';
+import Say from './Say';
 
 function App() {
   return (
     <>
-      <MyComponent name="이일훈" number={1}>
-        리액트
-      </MyComponent>
+      <Say></Say>
     </>
   );
 }
