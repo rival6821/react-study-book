@@ -5,7 +5,7 @@ import TodoList from './components/TodoList';
 
 function createBulkTodos() {
   const array = [];
-  for (let i = 1; i <= 2500; i++) {
+  for (let i = 1; i <= 5; i++) {
     array.push({
       id: i,
       text: `할일 ${i}`,
@@ -33,7 +33,7 @@ function todoReducer(todos, action) {
 const App = () => {
   const [todos, dispatch] = useReducer(todoReducer, undefined, createBulkTodos);
 
-  const nextId = useRef(2501);
+  const nextId = useRef(6);
 
   const onInsert = useCallback(text => {
     const todo = {
