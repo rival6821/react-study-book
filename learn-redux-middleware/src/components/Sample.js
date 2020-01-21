@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sample = ({ loadingPost, loadingUser, post, users }) => {
+const Sample = ({ post, users, loadingPost, loadingUser }) => {
   return (
     <div>
       <section>
